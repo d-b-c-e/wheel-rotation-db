@@ -1,0 +1,178 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/wheel-rotation-db/schema/wheel-rotation.schema.json",
+  "title": "Wheel Rotation Database",
+  "description": "Unified database of steering wheel rotation degrees for arcade racing/driving games across all emulator platforms",
+  "type": "object",
+  "required": ["version", "generated", "games"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Semantic version of the database"
+    },
+    "generated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of when the database was last generated"
+    },
+    "games": {
+      "type": "object",
+      "description": "Map of game IDs to game entries. Each key is a unique game identifier (typically the most common ROM name or a slug).",
+      "additionalProperties": {
+        "$ref": "#/$defs/gameEntry"
+      }
+    }
+  },
+  "$defs": {
+    "gameEntry": {
+      "type": "object",
+      "required": ["title", "rotation_degrees", "rotation_type", "confidence", "sources", "emulators"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Full display title of the game"
+        },
+        "manufacturer": {
+          "type": ["string", "null"],
+          "description": "Cabinet manufacturer (Sega, Namco, Midway, etc.)"
+        },
+        "year": {
+          "type": ["string", "null"],
+          "description": "Release year"
+        },
+        "rotation_degrees": {
+          "oneOf": [
+            {
+              "type": "number",
+              "minimum": 90,
+              "maximum": 1080
+            },
+            {
+              "type": "number",
+              "const": -1,
+              "description": "Infinite rotation (optical encoder / spinner)"
+            },
+            {
+              "type": "null",
+              "description": "Unknown / not yet researched"
+            }
+          ],
+          "description": "Total rotation in degrees (e.g., 270 means +/-135 from center). Use -1 for infinite rotation. Use null if unknown."
+        },
+        "rotation_type": {
+          "type": "string",
+          "enum": ["mechanical_stop", "optical_encoder", "potentiometer", "unknown"],
+          "description": "Type of rotation mechanism used in the original cabinet"
+        },
+        "confidence": {
+          "type": "string",
+          "enum": ["verified", "high", "medium", "low", "unknown"],
+          "description": "Confidence level in the rotation value"
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/source"
+          },
+          "description": "Sources documenting where the data came from"
+        },
+        "notes": {
+          "type": ["string", "null"],
+          "description": "Additional context about the control setup"
+        },
+        "emulators": {
+          "type": "object",
+          "description": "Map of emulator platform keys to platform-specific metadata",
+          "properties": {
+            "mame": { "$ref": "#/$defs/emulatorMame" },
+            "teknoparrot": { "$ref": "#/$defs/emulatorTeknoparrot" },
+            "supermodel": { "$ref": "#/$defs/emulatorGeneric" },
+            "m2emulator": { "$ref": "#/$defs/emulatorGeneric" },
+            "flycast": { "$ref": "#/$defs/emulatorGeneric" },
+            "dolphin": { "$ref": "#/$defs/emulatorDolphin" }
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/emulatorGeneric"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "required": ["type", "description"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["manual", "forum", "wiki", "video", "measurement", "inference", "other"],
+          "description": "Type of source"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the source"
+        },
+        "url": {
+          "type": ["string", "null"],
+          "description": "URL of the source if available"
+        },
+        "date_accessed": {
+          "type": ["string", "null"],
+          "format": "date",
+          "description": "Date the source was accessed"
+        }
+      },
+      "additionalProperties": false
+    },
+    "emulatorMame": {
+      "type": "object",
+      "required": ["romname"],
+      "properties": {
+        "romname": {
+          "type": "string",
+          "description": "MAME ROM set name"
+        },
+        "clones_inherit": {
+          "type": "boolean",
+          "default": true,
+          "description": "Whether MAME clone ROMs should inherit this rotation value"
+        }
+      },
+      "additionalProperties": false
+    },
+    "emulatorTeknoparrot": {
+      "type": "object",
+      "required": ["profile"],
+      "properties": {
+        "profile": {
+          "type": "string",
+          "description": "TeknoParrot GameProfile filename (without .xml extension)"
+        }
+      },
+      "additionalProperties": false
+    },
+    "emulatorDolphin": {
+      "type": "object",
+      "required": ["game_id"],
+      "properties": {
+        "game_id": {
+          "type": "string",
+          "description": "Triforce/GameCube game ID"
+        }
+      },
+      "additionalProperties": false
+    },
+    "emulatorGeneric": {
+      "type": "object",
+      "required": ["romname"],
+      "properties": {
+        "romname": {
+          "type": "string",
+          "description": "ROM or game identifier for this emulator"
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

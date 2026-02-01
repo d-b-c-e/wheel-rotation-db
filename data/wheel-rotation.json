@@ -1,0 +1,2905 @@
+{
+  "version": "1.2.0",
+  "generated": "2026-02-01T18:15:34Z",
+  "games": {
+    "outrun": {
+      "title": "Out Run",
+      "manufacturer": "Sega",
+      "year": "1986",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "manual",
+          "description": "Sega Out Run Operator's Manual - steering mechanism specifies 270 degree range",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Uses mechanical stops at 135 degrees each direction from center. Sega Super Scaler hardware.",
+      "emulators": {
+        "mame": {
+          "romname": "outrun",
+          "clones_inherit": true
+        }
+      }
+    },
+    "polepos": {
+      "title": "Pole Position",
+      "manufacturer": "Namco",
+      "year": "1982",
+      "rotation_degrees": -1,
+      "rotation_type": "optical_encoder",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "manual",
+          "description": "Namco/Atari Pole Position uses optical encoder wheel with infinite rotation capability",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Infinite rotation optical encoder (spinner). Maps better to spinner/mouse input than modern wheel.",
+      "emulators": {
+        "mame": {
+          "romname": "polepos",
+          "clones_inherit": true
+        }
+      }
+    },
+    "harddriv": {
+      "title": "Hard Drivin'",
+      "manufacturer": "Atari",
+      "year": "1989",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Atari Hard Drivin' uses potentiometer-based steering with calibration-dependent range. 270 is commonly cited default.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Potentiometer-based, calibration-dependent. Actual effective range may vary by cabinet condition.",
+      "emulators": {
+        "mame": {
+          "romname": "harddriv",
+          "clones_inherit": true
+        }
+      }
+    },
+    "daytona": {
+      "title": "Daytona USA",
+      "manufacturer": "Sega",
+      "year": "1994",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Standard Sega Model 2 racing cabinet steering specification",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Sega Model 2 hardware. Common Sega 270 degree spec.",
+      "emulators": {
+        "mame": {
+          "romname": "daytona",
+          "clones_inherit": true
+        },
+        "m2emulator": {
+          "romname": "daytona"
+        }
+      }
+    },
+    "ridgerac": {
+      "title": "Ridge Racer",
+      "manufacturer": "Namco",
+      "year": "1993",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Namco System 22 standard steering specification",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Namco System 22 hardware. Standard Namco 270 degree wheel.",
+      "emulators": {
+        "mame": {
+          "romname": "ridgerac",
+          "clones_inherit": true
+        }
+      }
+    },
+    "crusnusa": {
+      "title": "Cruis'n USA",
+      "manufacturer": "Midway",
+      "year": "1994",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Standard Midway racing cabinet steering specification",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Midway hardware. Standard 270 degree arcade wheel.",
+      "emulators": {
+        "mame": {
+          "romname": "crusnusa",
+          "clones_inherit": true
+        }
+      }
+    },
+    "vr": {
+      "title": "Virtua Racing",
+      "manufacturer": "Sega",
+      "year": "1992",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "manual",
+          "description": "Sega Model 1 cabinet specifications - 270 degree steering wheel",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Sega Model 1 hardware. First Sega 3D polygon racing game.",
+      "emulators": {
+        "mame": {
+          "romname": "vr",
+          "clones_inherit": true
+        }
+      }
+    },
+    "srallyc": {
+      "title": "Sega Rally Championship",
+      "manufacturer": "Sega",
+      "year": "1995",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "manual",
+          "description": "Sega Model 2 cabinet specifications - 270 degree steering wheel",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Sega Model 2 hardware.",
+      "emulators": {
+        "mame": {
+          "romname": "srallyc",
+          "clones_inherit": true
+        },
+        "m2emulator": {
+          "romname": "srallyc"
+        }
+      }
+    },
+    "fzeroax": {
+      "title": "F-Zero AX",
+      "manufacturer": "Sega/Nintendo",
+      "year": "2003",
+      "rotation_degrees": 150,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "forum",
+          "description": "Arcade-Projects forum - F-Zero AX wheel estimated at ~150 degrees, less than half a turn",
+          "url": "https://www.arcade-projects.com/threads/f-zero-ax-wheel-project.7358/",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Triforce hardware. Community reports ~150 degrees - significantly less than standard 270. Less than half a turn suits the high-speed F-Zero gameplay.",
+      "emulators": {
+        "mame": {
+          "romname": "fzeroax",
+          "clones_inherit": true
+        },
+        "teknoparrot": {
+          "profile": "FZeroAX"
+        },
+        "dolphin": {
+          "game_id": "GFZJ8P"
+        }
+      }
+    },
+    "outrun2_sp_sdx": {
+      "title": "OutRun 2 SP SDX",
+      "manufacturer": "Sega",
+      "year": "2006",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "verified",
+      "sources": [
+        {
+          "type": "other",
+          "description": "TeknoParrot Metadata - wheel_rotation field",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Sega Lindbergh Yellow hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "or2spdlx"
+        }
+      }
+    },
+    "sega_rally_3": {
+      "title": "Sega Rally 3",
+      "manufacturer": "Sega",
+      "year": "2008",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "verified",
+      "sources": [
+        {
+          "type": "other",
+          "description": "TeknoParrot Metadata - wheel_rotation field",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Sega Europa-R hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "SR3"
+        }
+      }
+    },
+    "swdc": {
+      "title": "Sega World Drivers Championship",
+      "manufacturer": "Sega",
+      "year": "2018",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "verified",
+      "sources": [
+        {
+          "type": "other",
+          "description": "TeknoParrot Metadata - wheel_rotation field",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Sega ALLS hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "SWDC"
+        }
+      }
+    },
+    "battle_gear_4": {
+      "title": "Battle Gear 4",
+      "manufacturer": "Taito",
+      "year": "2005",
+      "rotation_degrees": 540,
+      "rotation_type": "mechanical_stop",
+      "confidence": "verified",
+      "sources": [
+        {
+          "type": "other",
+          "description": "TeknoParrot Metadata - wheel_rotation field",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Taito Type X+ hardware. 540 degrees - wider range than typical arcade racers.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "BattleGear4"
+        }
+      }
+    },
+    "battle_gear_4_tuned": {
+      "title": "Battle Gear 4 Tuned",
+      "manufacturer": "Taito",
+      "year": "2006",
+      "rotation_degrees": 540,
+      "rotation_type": "mechanical_stop",
+      "confidence": "verified",
+      "sources": [
+        {
+          "type": "other",
+          "description": "TeknoParrot Metadata - wheel_rotation field",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Taito Type X+ hardware. Updated version of Battle Gear 4.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "BattleGear4Tuned"
+        }
+      }
+    },
+    "initial_d_4": {
+      "title": "Initial D: Arcade Stage 4",
+      "manufacturer": "Sega",
+      "year": "2007",
+      "rotation_degrees": 540,
+      "rotation_type": "mechanical_stop",
+      "confidence": "verified",
+      "sources": [
+        {
+          "type": "other",
+          "description": "TeknoParrot Metadata - wheel_rotation field",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Sega Lindbergh Yellow hardware. Initial D stages 4-8 use 540 degree rotation.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "ID4Exp"
+        }
+      }
+    },
+    "initial_d_5": {
+      "title": "Initial D: Arcade Stage 5",
+      "manufacturer": "Sega",
+      "year": "2009",
+      "rotation_degrees": 540,
+      "rotation_type": "mechanical_stop",
+      "confidence": "verified",
+      "sources": [
+        {
+          "type": "other",
+          "description": "TeknoParrot Metadata - wheel_rotation field",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Sega Lindbergh Yellow hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "ID5"
+        }
+      }
+    },
+    "initial_d_6": {
+      "title": "Initial D: Arcade Stage 6 Double Ace",
+      "manufacturer": "Sega",
+      "year": "2011",
+      "rotation_degrees": 540,
+      "rotation_type": "mechanical_stop",
+      "confidence": "verified",
+      "sources": [
+        {
+          "type": "other",
+          "description": "TeknoParrot Metadata - wheel_rotation field",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Sega RingEdge hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "ID6"
+        }
+      }
+    },
+    "initial_d_7": {
+      "title": "Initial D: Arcade Stage 7 Double Ace Cross",
+      "manufacturer": "Sega",
+      "year": "2012",
+      "rotation_degrees": 540,
+      "rotation_type": "mechanical_stop",
+      "confidence": "verified",
+      "sources": [
+        {
+          "type": "other",
+          "description": "TeknoParrot Metadata - wheel_rotation field",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Sega RingEdge hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "ID7"
+        }
+      }
+    },
+    "initial_d_8": {
+      "title": "Initial D: Arcade Stage 8 Infinity",
+      "manufacturer": "Sega",
+      "year": "2014",
+      "rotation_degrees": 540,
+      "rotation_type": "mechanical_stop",
+      "confidence": "verified",
+      "sources": [
+        {
+          "type": "other",
+          "description": "TeknoParrot Metadata - wheel_rotation field",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Sega RingEdge hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "ID8"
+        }
+      }
+    },
+    "initial_d_zero": {
+      "title": "Initial D: Arcade Stage Zero",
+      "manufacturer": "Sega",
+      "year": "2017",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "verified",
+      "sources": [
+        {
+          "type": "other",
+          "description": "TeknoParrot Metadata - wheel_rotation field",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Sega Nu hardware. Series switched from 540 to 270 starting with this entry.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "IDZ"
+        }
+      }
+    },
+    "initial_d_the_arcade": {
+      "title": "Initial D: The Arcade",
+      "manufacturer": "Sega",
+      "year": "2021",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "verified",
+      "sources": [
+        {
+          "type": "other",
+          "description": "TeknoParrot Metadata - wheel_rotation field",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Sega ALLS hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "IDTA"
+        }
+      }
+    },
+    "wmmt3": {
+      "title": "Wangan Midnight Maximum Tune 3",
+      "manufacturer": "Namco",
+      "year": "2007",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "verified",
+      "sources": [
+        {
+          "type": "other",
+          "description": "TeknoParrot Metadata - wheel_rotation field",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Namco N2 hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "WMMT3"
+        }
+      }
+    },
+    "wmmt5": {
+      "title": "Wangan Midnight Maximum Tune 5",
+      "manufacturer": "Namco",
+      "year": "2014",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "verified",
+      "sources": [
+        {
+          "type": "other",
+          "description": "TeknoParrot Metadata - wheel_rotation field",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Namco ES3B hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "WMMT5"
+        }
+      }
+    },
+    "wmmt6": {
+      "title": "Wangan Midnight Maximum Tune 6",
+      "manufacturer": "Namco",
+      "year": "2018",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "verified",
+      "sources": [
+        {
+          "type": "other",
+          "description": "TeknoParrot Metadata - wheel_rotation field",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Namco ES3B hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "WMMT6"
+        }
+      }
+    },
+    "wacky_races": {
+      "title": "Wacky Races",
+      "manufacturer": "Taito",
+      "year": "2009",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "verified",
+      "sources": [
+        {
+          "type": "other",
+          "description": "TeknoParrot Metadata - wheel_rotation field",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Taito Type X2 hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "WackyRaces"
+        }
+      }
+    },
+    "hummer": {
+      "title": "Hummer",
+      "manufacturer": "Sega",
+      "year": "2009",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Sega Lindbergh standard driving cabinet with 5K potentiometer",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Sega Lindbergh hardware. Standard Sega 270-degree wheel with force feedback.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "Hummer"
+        }
+      }
+    },
+    "hummer_extreme": {
+      "title": "Hummer Extreme Edition",
+      "manufacturer": "Sega",
+      "year": "2009",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Same cabinet/hardware as Hummer with updated content",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Sega Lindbergh hardware. Identical steering assembly to Hummer.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "hummerextreme"
+        }
+      }
+    },
+    "r_tuned": {
+      "title": "R-Tuned: Ultimate Street Racing",
+      "manufacturer": "Sega",
+      "year": "2008",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Uses modified SEGA Race TV cabinet with standard Lindbergh steering",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Sega Lindbergh hardware. Modified SEGA Race TV cabinet. TeknoParrot also available as R-TunedElf2.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "R-Tuned"
+        }
+      }
+    },
+    "sega_race_tv": {
+      "title": "SEGA Race TV",
+      "manufacturer": "Sega",
+      "year": "2008",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Standard Sega Lindbergh racing cabinet",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Sega Lindbergh hardware. R-Tuned uses a modified version of this cabinet. TeknoParrot also available as segartvelf2.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "segartv"
+        }
+      }
+    },
+    "ford_racing": {
+      "title": "Ford Racing: Full Blown",
+      "manufacturer": "Sega",
+      "year": "2006",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "manual",
+          "description": "Sega Lindbergh standard driving cabinet. Service manual shows standard 8-bit pot steering calibration.",
+          "url": "https://www.manualslib.com/manual/1443784/Sega-Ford-Racing-Twin-Full-Blown.html",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Sega Lindbergh Blue hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "FR"
+        }
+      }
+    },
+    "grid_arcade": {
+      "title": "GRID",
+      "manufacturer": "Codemasters/Sega",
+      "year": "2010",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Reuses SEGA Racing Classic cabinet design",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Sega Europa-R hardware. Codemasters game in Sega Racing Classic cabinet.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "GRID"
+        }
+      }
+    },
+    "daytona_championship": {
+      "title": "Daytona Championship USA",
+      "manufacturer": "Sega",
+      "year": "2017",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "forum",
+          "description": "Standard Sega racing cabinet. Community setup guides reference 270 degrees.",
+          "url": "https://forum.arcadecontrols.com/index.php?topic=167859.0",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Sega PC hardware. Spiritual successor to Daytona USA. NSE (Daytona3NSE) is the Network Satellite Edition of the same game.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "Daytona3"
+        }
+      }
+    },
+    "showdown": {
+      "title": "Showdown",
+      "manufacturer": "Codemasters/Sega",
+      "year": "2014",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Same Sega standard racing cabinet as GRID",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Sega PC hardware. DiRT: Showdown arcade port.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "Showdown"
+        }
+      }
+    },
+    "ko_drive": {
+      "title": "K.O. Drive",
+      "manufacturer": "Sega",
+      "year": "2012",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Cabinet based on SEGA Racing Classic, uses R-Tuned steering wheel",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Sega RingWide hardware. Prototype.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "KODrive"
+        }
+      }
+    },
+    "lets_go_safari": {
+      "title": "Let's Go Safari",
+      "manufacturer": "Sega",
+      "year": "2012",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Sega RingWide kiddie driving game. Uses arcade steering wheel controls.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Sega RingWide hardware. Kiddie edutainment driving game.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "LGS"
+        }
+      }
+    },
+    "sega_racing_classic": {
+      "title": "SEGA Racing Classic",
+      "manufacturer": "Sega",
+      "year": "2009",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "manual",
+          "description": "HD remaster of Daytona USA. Standard Sega racing cabinet.",
+          "url": "https://segaretro.org/images/7/72/SegaRacingClassic_Ringwide_Manual.pdf",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Sega RingWide hardware. HD remaster of Daytona USA.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "SRC"
+        }
+      }
+    },
+    "sonic_allstars_racing": {
+      "title": "Sonic & SEGA All-Stars Racing",
+      "manufacturer": "Sega",
+      "year": "2011",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "manual",
+          "description": "Uses SEGA Racing Classic cabinet design with cosmetic modifications",
+          "url": "https://www.manualslib.com/manual/2076523/Sega-Sonic-And-Sega-All-Stars-Racing-Arcade.html",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Sega RingWide hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "SSASR"
+        }
+      }
+    },
+    "harley_davidson": {
+      "title": "Harley-Davidson: King of the Road",
+      "manufacturer": "Sega",
+      "year": "2006",
+      "rotation_degrees": 90,
+      "rotation_type": "mechanical_stop",
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Motorcycle handlebar controls with 5K potentiometer. Estimated ~90 degrees based on physical handlebar range.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Sega Lindbergh hardware. Motorcycle handlebars, NOT a steering wheel. Rotation is much less than car games.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "Harley"
+        }
+      }
+    },
+    "fzeroax_monster": {
+      "title": "F-Zero AX Monster Ride",
+      "manufacturer": "Sega/Nintendo",
+      "year": "2003",
+      "rotation_degrees": 150,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "forum",
+          "description": "Community estimates ~150 degrees. Cabinet variant but same steering input range.",
+          "url": "https://www.arcade-projects.com/threads/f-zero-ax-wheel-project.7358/",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Triforce hardware. Monster Ride cabinet variant. Same ~150 degree range as standard F-Zero AX.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "FZeroAXMonster"
+        }
+      }
+    },
+    "mario_kart_gp": {
+      "title": "Mario Kart Arcade GP",
+      "manufacturer": "Namco/Nintendo",
+      "year": "2005",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Namco-manufactured cabinet on Triforce hardware. Standard Namco 270-degree steering.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Sega Triforce hardware. Namco cabinet design.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "MarioKartGP"
+        }
+      }
+    },
+    "mario_kart_gp2": {
+      "title": "Mario Kart Arcade GP 2",
+      "manufacturer": "Namco/Nintendo",
+      "year": "2007",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Same Namco cabinet and steering hardware as MKAGP1",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Sega Triforce hardware. Same cabinet as Mario Kart GP.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "MarioKartGP2"
+        }
+      }
+    },
+    "dead_heat": {
+      "title": "Dead Heat",
+      "manufacturer": "Namco",
+      "year": "2010",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Namco ES1 standard racing cabinet with force-feedback steering assembly",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Namco ES1 hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "DeadHeat"
+        }
+      }
+    },
+    "maximum_heat_3d": {
+      "title": "Maximum Heat 3D",
+      "manufacturer": "Namco",
+      "year": "2010",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Japanese 3D version of Dead Heat. Identical steering assembly.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Namco ES1 hardware. Stereoscopic 3D version of Dead Heat.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "MaximumHeat"
+        }
+      }
+    },
+    "nirin": {
+      "title": "Nirin",
+      "manufacturer": "Namco",
+      "year": "2010",
+      "rotation_degrees": 60,
+      "rotation_type": "potentiometer",
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Motorcycle game using handlebars, not steering wheel. Estimated ~60 degrees.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Namco ES1 hardware. Motorcycle swivel controller with handlebars. Steering is primarily lean-based.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "Nirin"
+        }
+      }
+    },
+    "tank_tank_tank": {
+      "title": "Tank! Tank! Tank!",
+      "manufacturer": "Namco",
+      "year": "2009",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "manual",
+          "description": "Namco ES1 cabinet. Manual documents stopper arm/shaft confirming mechanical stops.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Namco ES1 hardware. Tank combat game with steering.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "TankTankTank"
+        }
+      }
+    },
+    "mario_kart_gp_dx": {
+      "title": "Mario Kart Arcade GP DX",
+      "manufacturer": "Namco/Nintendo",
+      "year": "2013",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "verified",
+      "sources": [
+        {
+          "type": "manual",
+          "description": "SuzoHapp parts listing: '270 active steering wheel assembly' (part 50-0102-50EX)",
+          "url": "https://na.suzohapp.com/parts/arcade_parts/bandai_namco/mario_kart_arcade_gp_dx/",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Namco ES3A hardware. TeknoParrot variants: MKDX, MKDX118, MKDXUSA, MKDXUSA106.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "MKDX"
+        }
+      }
+    },
+    "dead_heat_riders": {
+      "title": "Dead Heat Riders",
+      "manufacturer": "Namco",
+      "year": "2011",
+      "rotation_degrees": 60,
+      "rotation_type": "potentiometer",
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Motorcycle game using force feedback swivel bike seat with handlebars. Estimated ~60 degrees.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Namco hardware. Motorcycle handlebars, NOT a steering wheel.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "DeadHeatRiders"
+        }
+      }
+    },
+    "wmmt3dxp": {
+      "title": "Wangan Midnight Maximum Tune 3DX Plus",
+      "manufacturer": "Namco",
+      "year": "2008",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "other",
+          "description": "Same steering hardware as WMMT3 through WMMT6RR series - all confirmed 270 degrees",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Namco N2 hardware. Variant of WMMT3.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "WMMT3DXP"
+        }
+      }
+    },
+    "ace_driver_3": {
+      "title": "Ace Driver 3: Final Turn",
+      "manufacturer": "Namco",
+      "year": "2008",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Namco System 246 standard racing cabinet. 270 degrees consistent with Namco standard.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Namco System 246 hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "acedriv3"
+        }
+      }
+    },
+    "battle_gear_3": {
+      "title": "Battle Gear 3",
+      "manufacturer": "Taito",
+      "year": "2002",
+      "rotation_degrees": 540,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Same series as Battle Gear 4 (confirmed 540). Force feedback servo motor.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Namco System 246 hardware. Taito-developed. Same Battle Gear series as BG4 (540 degrees).",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "batlgr3"
+        }
+      }
+    },
+    "battle_gear_3_tuned": {
+      "title": "Battle Gear 3 Tuned",
+      "manufacturer": "Taito",
+      "year": "2003",
+      "rotation_degrees": 540,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Updated version of Battle Gear 3. Same steering hardware.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Namco System 246 hardware. Updated version of Battle Gear 3.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "batlgr3t"
+        }
+      }
+    },
+    "motogp_namco": {
+      "title": "MotoGP",
+      "manufacturer": "Namco",
+      "year": "2000",
+      "rotation_degrees": 60,
+      "rotation_type": "potentiometer",
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Motorcycle racing with handlebars. Estimated ~60 degrees.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Namco System 246 hardware. Motorcycle handlebars, NOT a steering wheel.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "motogp2000"
+        }
+      }
+    },
+    "wangan_midnight": {
+      "title": "Wangan Midnight",
+      "manufacturer": "Namco",
+      "year": "2002",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "First Wangan Midnight game. Same cabinet lineage as WMMT series (all confirmed 270).",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Namco System 246 hardware. Predecessor to WMMT series.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "wanganmd"
+        }
+      }
+    },
+    "wangan_midnight_r": {
+      "title": "Wangan Midnight R",
+      "manufacturer": "Namco",
+      "year": "2004",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Upgraded version of Wangan Midnight. Same cabinet and 270-degree steering.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Namco System 246 hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "wanganmr"
+        }
+      }
+    },
+    "fnf": {
+      "title": "The Fast and the Furious",
+      "manufacturer": "Raw Thrills",
+      "year": "2004",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "other",
+          "description": "SuzoHapp Active 270 steering assembly. Parts catalog confirms 270-degree active steering for Raw Thrills games.",
+          "url": "https://na.suzohapp.com/products/driving_controls/50-4043-00",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Raw Thrills PC hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "FNF"
+        }
+      }
+    },
+    "fnf_drift": {
+      "title": "The Fast and the Furious Drift",
+      "manufacturer": "Raw Thrills",
+      "year": "2007",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "other",
+          "description": "Same Raw Thrills platform with SuzoHapp Active 270 steering",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Raw Thrills PC hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "FNFDrift"
+        }
+      }
+    },
+    "fnf_superbikes": {
+      "title": "The Fast and the Furious Super Bikes",
+      "manufacturer": "Raw Thrills",
+      "year": "2006",
+      "rotation_degrees": 45,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Motorcycle cabinet with swivel bike controller and handlebars. Limited handlebar rotation.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Raw Thrills PC hardware. Motorcycle handlebars with lean-based steering.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "FNFSB"
+        }
+      }
+    },
+    "fnf_supercars": {
+      "title": "The Fast and the Furious SuperCars",
+      "manufacturer": "Raw Thrills",
+      "year": "2011",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "other",
+          "description": "SuzoHapp parts catalog confirms shared steering wheel hoop with Raw Thrills car games",
+          "url": "https://www.betsonparts.com/amusement-redemption/raw-thrills-steering-wheel-hoop.html",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Raw Thrills PC hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "FNFSC"
+        }
+      }
+    },
+    "super_bikes_2": {
+      "title": "Super Bikes 2",
+      "manufacturer": "Raw Thrills",
+      "year": "2010",
+      "rotation_degrees": 45,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Same swivel motorcycle controller platform as FNF Super Bikes",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Raw Thrills PC hardware. Motorcycle handlebars with lean-based steering.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "FNFSB2"
+        }
+      }
+    },
+    "super_bikes_3": {
+      "title": "Super Bikes 3",
+      "manufacturer": "Raw Thrills",
+      "year": "2020",
+      "rotation_degrees": 45,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Same swivel motorcycle controller platform",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Raw Thrills PC hardware. Motorcycle handlebars with lean-based steering.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "SB3"
+        }
+      }
+    },
+    "batman_raw_thrills": {
+      "title": "Batman",
+      "manufacturer": "Raw Thrills",
+      "year": "2013",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Custom Bat Wheel but same Raw Thrills 270-degree platform",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Raw Thrills PC hardware. Custom 'Bat Wheel' design on standard Raw Thrills steering assembly.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "Batman"
+        }
+      }
+    },
+    "cars_pixar": {
+      "title": "Cars",
+      "manufacturer": "Raw Thrills",
+      "year": "2011",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "other",
+          "description": "SuzoHapp explicitly lists Pixar Cars as using shared Raw Thrills steering wheel hoop",
+          "url": "https://www.betsonparts.com/amusement-redemption/raw-thrills-steering-wheel-hoop.html",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Raw Thrills PC hardware. Disney Pixar Cars arcade racer.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "Cars"
+        }
+      }
+    },
+    "dirty_drivin": {
+      "title": "Dirty Drivin'",
+      "manufacturer": "Raw Thrills/Specular",
+      "year": "2010",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "other",
+          "description": "SuzoHapp explicitly lists Dirty Drivin' as using shared Raw Thrills steering wheel hoop",
+          "url": "https://www.betsonparts.com/amusement-redemption/raw-thrills-steering-wheel-hoop.html",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Raw Thrills PC hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "DirtyDrivin"
+        }
+      }
+    },
+    "h2overdrive": {
+      "title": "H2Overdrive",
+      "manufacturer": "Raw Thrills",
+      "year": "2009",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "other",
+          "description": "SuzoHapp explicitly lists H2Overdrive as using shared Raw Thrills steering wheel hoop",
+          "url": "https://www.betsonparts.com/amusement-redemption/raw-thrills-steering-wheel-hoop.html",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Raw Thrills PC hardware. Boat racing but uses standard steering wheel.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "H2Overdrive"
+        }
+      }
+    },
+    "nicktoons_nitro": {
+      "title": "Nicktoons Nitro Racing",
+      "manufacturer": "Raw Thrills",
+      "year": "2008",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Raw Thrills standard platform. Same Dell PC-based hardware as other Raw Thrills car games.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Raw Thrills PC hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "NicktoonsNitro"
+        }
+      }
+    },
+    "snocross": {
+      "title": "Winter X Games SnoCross",
+      "manufacturer": "Raw Thrills",
+      "year": "2012",
+      "rotation_degrees": 45,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Swivel snowmobile handle controller seat with handlebar-style controls",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Raw Thrills PC hardware. Snowmobile handlebars with motion seat. Lean-based steering.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "SnoCross"
+        }
+      }
+    },
+    "crusnblast": {
+      "title": "Cruis'n Blast",
+      "manufacturer": "Raw Thrills",
+      "year": "2017",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "other",
+          "description": "SuzoHapp lists Cruis'n Blast as using shared Raw Thrills steering wheel hoop. Active 270 timing belt.",
+          "url": "https://www.betsonparts.com/amusement-redemption/raw-thrills-steering-wheel-hoop.html",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Raw Thrills Linux PC hardware. Latest in Cruis'n series.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "CruisnBlast"
+        }
+      }
+    },
+    "motogp_raw_thrills": {
+      "title": "MotoGP",
+      "manufacturer": "Raw Thrills",
+      "year": "2015",
+      "rotation_degrees": 45,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Authentic MotoGP replica motorcycle swivel controller with handlebars",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Raw Thrills Linux PC hardware. Motorcycle handlebars with lean-based steering.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "MotoGP"
+        }
+      }
+    },
+    "arctic_thunder": {
+      "title": "Arctic Thunder",
+      "manufacturer": "Midway",
+      "year": "2001",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "other",
+          "description": "SuzoHapp Active 270 timing belt compatible. Handlebar form factor but uses same 270-degree steering assembly.",
+          "url": "https://na.suzohapp.com/products/driving_controls/50-4041-90",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Midway PC hardware. Snowmobile-style handlebars but with Active 270 steering mechanism.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "ArcticThunder"
+        }
+      }
+    },
+    "offroad_thunder": {
+      "title": "Offroad Thunder",
+      "manufacturer": "Midway",
+      "year": "1999",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "other",
+          "description": "SuzoHapp Active 270 timing belt compatible. Standard steering wheel.",
+          "url": "https://na.suzohapp.com/products/driving_controls/50-4041-90",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Midway PC hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "OffroadThunder"
+        }
+      }
+    },
+    "ultimate_arctic_thunder": {
+      "title": "Ultimate Arctic Thunder",
+      "manufacturer": "Midway",
+      "year": "2003",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Updated Arctic Thunder on Midway Graphite hardware. Same handlebar controller.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Midway Graphite hardware. Updated Arctic Thunder.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "UltimateArcticThunder"
+        }
+      }
+    },
+    "gaelco_tuning_race": {
+      "title": "Gaelco Championship Tuning Race",
+      "manufacturer": "Gaelco",
+      "year": "2003",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Gaelco custom hardware. 270 degrees assumed from industry standard.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Gaelco PC hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "GaelcoChampionshipTuningRace"
+        }
+      }
+    },
+    "ring_riders": {
+      "title": "Ring Riders",
+      "manufacturer": "Gaelco",
+      "year": "2004",
+      "rotation_degrees": 45,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "manual",
+          "description": "Motorcycle cabinet with handlebars. Manual documents stopper parts limiting rotation.",
+          "url": "https://www.manualslib.com/manual/2096648/Gaelco-Ring-Riders.html",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Gaelco PC hardware. Motorcycle handlebars with motion platform.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "RingRiders"
+        }
+      }
+    },
+    "tokyo_cop": {
+      "title": "Tokyo Cop",
+      "manufacturer": "Gaelco",
+      "year": "2001",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Shares motor controller board with Championship Tuning Race. 270 assumed.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Gaelco PC hardware. Car chase game.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "TokyoCop"
+        }
+      }
+    },
+    "radikal_bikers": {
+      "title": "Radikal Bikers",
+      "manufacturer": "Gaelco/Atari",
+      "year": "1998",
+      "rotation_degrees": 45,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Italian scooter racing with handlebar controls. Limited rotation range.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Gaelco PC hardware. Scooter/bicycle handlebars.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "RadikalBikers"
+        }
+      }
+    },
+    "chase_hq_2": {
+      "title": "Chase H.Q. 2",
+      "manufacturer": "Taito",
+      "year": "2007",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Direct sequel to Chase H.Q. (confirmed 270 degrees). Taito standard racing cabinet.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Taito Type X2 hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "ChaseHQ2"
+        }
+      }
+    },
+    "d1gp_arcade": {
+      "title": "D1GP Arcade",
+      "manufacturer": "Yuke's/Taito",
+      "year": "2006",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Drift racing game. No official specs found. Taito standard 270-degree steering.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Taito Type X2 hardware. Drift racing.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "D1GP"
+        }
+      }
+    },
+    "valve_limit_r": {
+      "title": "Valve Limit R",
+      "manufacturer": "Taito",
+      "year": "2006",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Battle Gear successor/spinoff. Taito standard steering with force feedback.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Taito Type X hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "VirtuaRLimit"
+        }
+      }
+    },
+    "hot_wheels_arcade": {
+      "title": "Hot Wheels",
+      "manufacturer": "Adrenaline Amusements",
+      "year": "2018",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Uses force feedback steering wheel with SuzoHapp steering mechanism",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Adrenaline PC hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "HotWheels"
+        }
+      }
+    },
+    "nfs_heat_takedown": {
+      "title": "Need For Speed HEAT Takedown",
+      "manufacturer": "Adrenaline Amusements",
+      "year": "2023",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "manual",
+          "description": "Standard arcade racing cabinet with steering wheel motor assembly",
+          "url": "https://www.betson.com/wp-content/uploads/2023/10/NFS_Manual-V1.0.1.pdf",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Adrenaline PC hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "NFSHeatTakedown"
+        }
+      }
+    },
+    "gti_club_3": {
+      "title": "GTI Club: Supermini Festa!",
+      "manufacturer": "Konami",
+      "year": "2009",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "GTI Club series from Konami. Standard 270-degree arcade wheel.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Konami PC hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "GtiClub3"
+        }
+      }
+    },
+    "ballistics": {
+      "title": "Ballistics",
+      "manufacturer": "Triotech",
+      "year": "2013",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "other",
+          "description": "SuzoHapp 270-degree wheel explicitly listed as compatible with Triotech Ballistics",
+          "url": "https://na.suzohapp.com/products/driving_controls/50-2838-00",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Triotech PC hardware. Futuristic tube racer with motion seat.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "Ballistics"
+        }
+      }
+    },
+    "wasteland_racers": {
+      "title": "Wasteland Racers 2071",
+      "manufacturer": "Triotech",
+      "year": "2014",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Same Triotech Mad Wave Motion platform as Ballistics. Same steering assembly.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Triotech PC hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "WastelandRacers"
+        }
+      }
+    },
+    "revolt_arcade": {
+      "title": "ReVolt",
+      "manufacturer": "Tsunami Visual",
+      "year": "2007",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "RC car racing. Uses HAPP UCGI Driving board. 270 assumed from standard components.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Tsunami PC hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "Revolt"
+        }
+      }
+    },
+    "crazy_ride": {
+      "title": "Crazy Ride",
+      "manufacturer": "UNIS",
+      "year": "2015",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Standard arcade racer. 270 assumed from industry standard.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "UNIS PC hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "CrazyRide"
+        }
+      }
+    },
+    "crazy_speed": {
+      "title": "Crazy Speed",
+      "manufacturer": "UNIS",
+      "year": "2016",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Standard arcade racer. 270 assumed from industry standard.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "UNIS PC hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "CrazySpeed"
+        }
+      }
+    },
+    "frenzy_express": {
+      "title": "Frenzy Express",
+      "manufacturer": "Uniana",
+      "year": "2015",
+      "rotation_degrees": 45,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Kick scooter controller with handlebars. Very limited handlebar rotation.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "Uniana PC hardware. Kick scooter with handlebars.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "FrenzyExpress"
+        }
+      }
+    },
+    "storm_racer_g": {
+      "title": "Storm Racer G",
+      "manufacturer": "WAHLAP",
+      "year": "2015",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Chinese arcade manufacturer. Standard steering wheel. 270 assumed.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "WAHLAP PC hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "SRG"
+        }
+      }
+    },
+    "storm_rider": {
+      "title": "Storm Rider",
+      "manufacturer": "WAHLAP",
+      "year": "2013",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "inference",
+          "description": "Chinese arcade manufacturer. Standard steering wheel. 270 assumed.",
+          "url": null,
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": "WAHLAP PC hardware.",
+      "emulators": {
+        "teknoparrot": {
+          "profile": "StormRider"
+        }
+      }
+    },
+    "american-speedway": {
+      "title": "American Speedway",
+      "manufacturer": "Enerdyne Technologies Inc.",
+      "year": "1987",
+      "rotation_degrees": 360,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 360 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "amspdwy",
+          "clones_inherit": true
+        }
+      }
+    },
+    "apb-all-points-bulletin": {
+      "title": "APB - All Points Bulletin",
+      "manufacturer": "Atari Games",
+      "year": "1987",
+      "rotation_degrees": 360,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 360 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "apb",
+          "clones_inherit": true
+        }
+      }
+    },
+    "bad-lands": {
+      "title": "Bad Lands",
+      "manufacturer": "Atari Games",
+      "year": "1989",
+      "rotation_degrees": 360,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 360 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "badlands",
+          "clones_inherit": true
+        }
+      }
+    },
+    "big-run": {
+      "title": "Big Run",
+      "manufacturer": "Jaleco",
+      "year": "1989",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 270 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "bigrun",
+          "clones_inherit": true
+        }
+      }
+    },
+    "buggy-challenge": {
+      "title": "Buggy Challenge",
+      "manufacturer": "Taito Corporation",
+      "year": "1984",
+      "rotation_degrees": 360,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 360 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "buggychl",
+          "clones_inherit": true
+        }
+      }
+    },
+    "cisco-heat": {
+      "title": "Cisco Heat",
+      "manufacturer": "Jaleco",
+      "year": "1990",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 270 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "cischeat",
+          "clones_inherit": true
+        }
+      }
+    },
+    "championship-sprint": {
+      "title": "Championship Sprint",
+      "manufacturer": "Atari Games",
+      "year": "1986",
+      "rotation_degrees": 360,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 360 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "csprint",
+          "clones_inherit": true
+        }
+      }
+    },
+    "demolition-derby": {
+      "title": "Demolition Derby",
+      "manufacturer": "Bally Midway",
+      "year": "1984",
+      "rotation_degrees": 360,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 360 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "demoderb",
+          "clones_inherit": true
+        }
+      }
+    },
+    "f1-exhaust-note": {
+      "title": "F1 Exhaust Note",
+      "manufacturer": "Sega",
+      "year": "1991",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 270 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "f1en",
+          "clones_inherit": true
+        }
+      }
+    },
+    "grand-prix-star": {
+      "title": "Grand Prix Star",
+      "manufacturer": "Jaleco",
+      "year": "1992",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 270 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "f1gpstar",
+          "clones_inherit": true
+        }
+      }
+    },
+    "final-lap-2": {
+      "title": "Final Lap 2",
+      "manufacturer": "Namco",
+      "year": "1990",
+      "rotation_degrees": 360,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 360 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "finalap2",
+          "clones_inherit": true
+        }
+      }
+    },
+    "fire-truck-smokey-joe": {
+      "title": "Fire Truck / Smokey Joe",
+      "manufacturer": "Atari",
+      "year": "1978",
+      "rotation_degrees": 360,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 360 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "firetrk",
+          "clones_inherit": true
+        }
+      }
+    },
+    "grand-champion": {
+      "title": "Grand Champion",
+      "manufacturer": "Taito",
+      "year": "1981",
+      "rotation_degrees": 360,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 360 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "grchamp",
+          "clones_inherit": true
+        }
+      }
+    },
+    "1000-miglia-great-1000-miles-rally": {
+      "title": "1000 Miglia: Great 1000 Miles Rally",
+      "manufacturer": "Kaneko",
+      "year": "1994",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 270 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "gtmr",
+          "clones_inherit": true
+        }
+      }
+    },
+    "mille-miglia-2-great-1000-miles-rally": {
+      "title": "Mille Miglia 2: Great 1000 Miles Rally",
+      "manufacturer": "Kaneko",
+      "year": "1995",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 270 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "gtmr2",
+          "clones_inherit": true
+        }
+      }
+    },
+    "hot-rod": {
+      "title": "Hot Rod",
+      "manufacturer": "Sega",
+      "year": "1988",
+      "rotation_degrees": 360,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 360 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "hotrod",
+          "clones_inherit": true
+        }
+      }
+    },
+    "danny-sullivan-s-indy-heat": {
+      "title": "Danny Sullivan's Indy Heat",
+      "manufacturer": "Leland Corporation",
+      "year": "1991",
+      "rotation_degrees": 360,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 360 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "indyheat",
+          "clones_inherit": true
+        }
+      }
+    },
+    "konami-gt": {
+      "title": "Konami GT",
+      "manufacturer": "Konami",
+      "year": "1985",
+      "rotation_degrees": 360,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 360 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "konamigt",
+          "clones_inherit": true
+        }
+      }
+    },
+    "laguna-racer": {
+      "title": "Laguna Racer",
+      "manufacturer": "Midway",
+      "year": "1977",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 270 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "lagunar",
+          "clones_inherit": true
+        }
+      }
+    },
+    "max-rpm": {
+      "title": "Max RPM",
+      "manufacturer": "Bally Midway",
+      "year": "1986",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 270 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "maxrpm",
+          "clones_inherit": true
+        }
+      }
+    },
+    "monte-carlo": {
+      "title": "Monte Carlo",
+      "manufacturer": "Atari",
+      "year": "1979",
+      "rotation_degrees": 360,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 360 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "montecar",
+          "clones_inherit": true
+        }
+      }
+    },
+    "ironman-ivan-stewart-s-super-off-road": {
+      "title": "Ironman Ivan Stewart's Super Off-Road",
+      "manufacturer": "Leland Corporation",
+      "year": "1989",
+      "rotation_degrees": 360,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 360 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "offroad",
+          "clones_inherit": true
+        }
+      }
+    },
+    "ironman-ivan-stewart-s-super-off-road-track-pak": {
+      "title": "Ironman Ivan Stewart's Super Off-Road Track-Pak",
+      "manufacturer": "Leland Corporation",
+      "year": "1989",
+      "rotation_degrees": 360,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 360 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "offroadt",
+          "clones_inherit": true
+        }
+      }
+    },
+    "over-drive": {
+      "title": "Over Drive",
+      "manufacturer": "Konami",
+      "year": "1990",
+      "rotation_degrees": 360,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 360 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "overdriv",
+          "clones_inherit": true
+        }
+      }
+    },
+    "power-drift": {
+      "title": "Power Drift",
+      "manufacturer": "Sega",
+      "year": "1988",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 270 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "pdrift",
+          "clones_inherit": true
+        }
+      }
+    },
+    "pole-position-ii": {
+      "title": "Pole Position II",
+      "manufacturer": "Namco",
+      "year": "1983",
+      "rotation_degrees": 360,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 360 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "polepos2",
+          "clones_inherit": true
+        }
+      }
+    },
+    "redline-racer": {
+      "title": "Redline Racer",
+      "manufacturer": "Cinematronics (Tradewest license)",
+      "year": "1987",
+      "rotation_degrees": 360,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 360 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "redlin2p",
+          "clones_inherit": true
+        }
+      }
+    },
+    "road-blasters": {
+      "title": "Road Blasters",
+      "manufacturer": "Atari Games",
+      "year": "1987",
+      "rotation_degrees": 360,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 360 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "roadblst",
+          "clones_inherit": true
+        }
+      }
+    },
+    "super-monaco-gp": {
+      "title": "Super Monaco GP",
+      "manufacturer": "Sega",
+      "year": "1989",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 270 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "smgp",
+          "clones_inherit": true
+        }
+      }
+    },
+    "speed-freak": {
+      "title": "Speed Freak",
+      "manufacturer": "Vectorbeam",
+      "year": "1979",
+      "rotation_degrees": 360,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 360 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "speedfrk",
+          "clones_inherit": true
+        }
+      }
+    },
+    "speed-racer": {
+      "title": "Speed Racer",
+      "manufacturer": "Namco",
+      "year": "1995",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 270 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "speedrcr",
+          "clones_inherit": true
+        }
+      }
+    },
+    "sprint-1": {
+      "title": "Sprint 1",
+      "manufacturer": "Atari (Kee Games)",
+      "year": "1978",
+      "rotation_degrees": 360,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 360 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "sprint1",
+          "clones_inherit": true
+        }
+      }
+    },
+    "super-speed-race": {
+      "title": "Super Speed Race",
+      "manufacturer": "Midway",
+      "year": "1979",
+      "rotation_degrees": 360,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 360 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "sspeedr",
+          "clones_inherit": true
+        }
+      }
+    },
+    "super-sprint": {
+      "title": "Super Sprint",
+      "manufacturer": "Atari Games",
+      "year": "1986",
+      "rotation_degrees": 360,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 360 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "ssprint",
+          "clones_inherit": true
+        }
+      }
+    },
+    "stocker": {
+      "title": "Stocker",
+      "manufacturer": "Bally/Sente",
+      "year": "1984",
+      "rotation_degrees": 360,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 360 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "stocker",
+          "clones_inherit": true
+        }
+      }
+    },
+    "subs": {
+      "title": "Subs",
+      "manufacturer": "Atari",
+      "year": "1977",
+      "rotation_degrees": 360,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 360 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "subs",
+          "clones_inherit": true
+        }
+      }
+    },
+    "top-speed": {
+      "title": "Top Speed",
+      "manufacturer": "Taito Corporation Japan",
+      "year": "1987",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 270 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "topspeed",
+          "clones_inherit": true
+        }
+      }
+    },
+    "turbo-out-run": {
+      "title": "Turbo Out Run",
+      "manufacturer": "Sega",
+      "year": "1989",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 270 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "toutrun",
+          "clones_inherit": true
+        }
+      }
+    },
+    "turbo": {
+      "title": "Turbo",
+      "manufacturer": "Sega",
+      "year": "1981",
+      "rotation_degrees": 360,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 360 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "turbo",
+          "clones_inherit": true
+        }
+      }
+    },
+    "wec-le-mans-24": {
+      "title": "WEC Le Mans 24",
+      "manufacturer": "Konami",
+      "year": "1986",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "database",
+          "description": "controls.xml: 270 Steering Wheel",
+          "url": "https://github.com/benbaker76/ControlsDat",
+          "date_accessed": "2026-01-31"
+        }
+      ],
+      "notes": null,
+      "emulators": {
+        "mame": {
+          "romname": "wecleman",
+          "clones_inherit": true
+        }
+      }
+    }
+  }
+}
