@@ -1,6 +1,6 @@
 {
-  "version": "1.2.0",
-  "generated": "2026-02-01T18:15:34Z",
+  "version": "1.3.0",
+  "generated": "2026-02-01T19:14:22Z",
   "games": {
     "outrun": {
       "title": "Out Run",
@@ -2897,6 +2897,1467 @@
       "emulators": {
         "mame": {
           "romname": "wecleman",
+          "clones_inherit": true
+        }
+      }
+    },
+    "18wheeler": {
+      "title": "18 Wheeler: American Pro Trucker",
+      "manufacturer": "Sega",
+      "year": "2000",
+      "rotation_degrees": 360,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "forum",
+          "description": "Arcade-Projects and Racketboy forum discussions confirming 360-degree wheel",
+          "url": "https://racketboy.com/forum/viewtopic.php?f=6&t=39813",
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "NAOMI hardware. Multiple forum sources confirm 360 degrees, notably more than the typical Sega 270. Complex mechanical stops with set screws.",
+      "emulators": {
+        "mame": {
+          "romname": "18wheelr",
+          "clones_inherit": true
+        }
+      }
+    },
+    "abcop": {
+      "title": "A.B. Cop",
+      "manufacturer": "Sega",
+      "year": "1990",
+      "rotation_degrees": null,
+      "rotation_type": "potentiometer",
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Web research - no specific rotation data found for handlebar controls",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Motorcycle/air-bike on Sega X Board. Uses handlebar controls. No specific rotation degrees found. Likely 45-90 degree range typical of handlebar controls.",
+      "emulators": {
+        "mame": {
+          "romname": "abcop",
+          "clones_inherit": true
+        }
+      }
+    },
+    "crazytaxi": {
+      "title": "Crazy Taxi",
+      "manufacturer": "Sega",
+      "year": "1999",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "verified",
+      "sources": [
+        {
+          "type": "forum",
+          "description": "Arcade Museum forum - Crazy Taxi steering confirmed 270 degrees",
+          "url": "https://forums.arcade-museum.com/threads/crazy-taxi-steering-question.319791/",
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "NAOMI hardware. Confirmed 270 degrees by multiple sources. No force feedback; uses spring-based centering.",
+      "emulators": {
+        "mame": {
+          "romname": "crzytaxi",
+          "clones_inherit": true
+        }
+      }
+    },
+    "daytonausa2pe": {
+      "title": "Daytona USA 2 Power Edition",
+      "manufacturer": "Sega",
+      "year": "1998",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "emulator",
+          "description": "Supermodel emulator community confirms 270-degree 1:1 ratio with arcade",
+          "url": "https://www.neogaf.com/threads/supermodel-sega-model-3-arcade-emulator-now-features-sound.446307/page-2",
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Model 3 Step 2.1. Uses 5k ohm potentiometer. Supermodel emulator confirms 270 degrees gives 1:1 ratio. Shares SPG-2002 steering assembly with Scud Race, Sega Rally 2, Dirt Devils. 500W servo motor FFB.",
+      "emulators": {
+        "mame": {
+          "romname": "dayto2pe",
+          "clones_inherit": true
+        }
+      }
+    },
+    "daytonausa2": {
+      "title": "Daytona USA 2",
+      "manufacturer": "Sega",
+      "year": "1998",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "emulator",
+          "description": "Same cabinet as Power Edition - Supermodel community confirms 270 degrees",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Model 3 Step 2.1. Same hardware/cabinet as Power Edition (ROM update). 270-degree potentiometer with 500W servo FFB.",
+      "emulators": {
+        "mame": {
+          "romname": "daytona2",
+          "clones_inherit": true
+        }
+      }
+    },
+    "dirtdevils": {
+      "title": "Dirt Devils",
+      "manufacturer": "Sega",
+      "year": "1998",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "manual",
+          "description": "Sega Dirt Devils Owner's Manual",
+          "url": "https://www.manualslib.com/manual/1825799/Sega-Enterprises-Dirt-Devils.html",
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Model 3. Shares SPG-2002 steering assembly with Daytona USA 2, Scud Race, Sega Rally 2. 500W servo motor FFB.",
+      "emulators": {
+        "mame": {
+          "romname": "dirtdvls",
+          "clones_inherit": true
+        }
+      }
+    },
+    "gprider": {
+      "title": "GP Rider",
+      "manufacturer": "Sega",
+      "year": "1990",
+      "rotation_degrees": null,
+      "rotation_type": "potentiometer",
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Web research - no specific rotation data found",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Motorcycle on Sega X Board. Twin ride-on cabinet with tilting replica motorcycles. No specific handlebar rotation found.",
+      "emulators": {
+        "mame": {
+          "romname": "gprider",
+          "clones_inherit": true
+        }
+      }
+    },
+    "hangonjr": {
+      "title": "Hang-On Jr.",
+      "manufacturer": "Sega",
+      "year": "1985",
+      "rotation_degrees": null,
+      "rotation_type": "potentiometer",
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Web research - no specific rotation data found",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Cut-down Hang-On on Sega System E. Uses handlebar controls with potentiometer. No specific rotation degrees found.",
+      "emulators": {
+        "mame": {
+          "romname": "hangonjr",
+          "clones_inherit": true
+        }
+      }
+    },
+    "harleydavidson": {
+      "title": "Harley-Davidson and L.A. Riders",
+      "manufacturer": "Sega",
+      "year": "1997",
+      "rotation_degrees": null,
+      "rotation_type": "potentiometer",
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Web research - no specific rotation data found",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Motorcycle on Model 3 Step 2.0. Handlebar controls with gear shift on left handlebar. Manual describes calibration but no specific degrees found.",
+      "emulators": {
+        "mame": {
+          "romname": "harley",
+          "clones_inherit": true
+        }
+      }
+    },
+    "jambosafari": {
+      "title": "Jambo! Safari",
+      "manufacturer": "Sega",
+      "year": "1999",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "forum",
+          "description": "Arcade-Projects confirms Jambo Safari works in Crazy Taxi cabinet at 270 degrees",
+          "url": "https://www.arcade-projects.com/threads/jambo-safari-steering-wheel-info.32156/",
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "NAOMI hardware. Works in Crazy Taxi cabinet (also 270). Spring-based centering, no FFB. Part of Sega 'Real Life Career Series'.",
+      "emulators": {
+        "mame": {
+          "romname": "jambo",
+          "clones_inherit": true
+        }
+      }
+    },
+    "lemans24": {
+      "title": "Le Mans 24",
+      "manufacturer": "Sega",
+      "year": "1997",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "emulator",
+          "description": "Supermodel emulator community confirms 270 degrees",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Model 3 Step 1.5. Uses older steering motor/FFB boards (same as Touring Cars). Supermodel emulator recommends 270 degrees for 1:1 arcade feel.",
+      "emulators": {
+        "mame": {
+          "romname": "lemans24",
+          "clones_inherit": true
+        }
+      }
+    },
+    "manxttsuperbike": {
+      "title": "Manx TT Superbike",
+      "manufacturer": "Sega",
+      "year": "1995",
+      "rotation_degrees": null,
+      "rotation_type": "potentiometer",
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Web research - approximate range inferred from emulation community",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Motorcycle on Model 2A. Honda RC45 replica. Tilts left/right plus handlebar input. Emulation suggests 180 degrees on wheel feels natural but freer than real cabinet. Likely 45-90 degree range.",
+      "emulators": {
+        "mame": {
+          "romname": "manxttc",
+          "clones_inherit": true
+        }
+      }
+    },
+    "motorraid": {
+      "title": "Motor Raid",
+      "manufacturer": "Sega",
+      "year": "1997",
+      "rotation_degrees": null,
+      "rotation_type": "potentiometer",
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Same hardware as Manx TT Superbike",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Motorcycle combat racing on Model 2A. ROM swap for Manx TT Superbike - uses identical cabinet/handlebar hardware. Additional attack buttons.",
+      "emulators": {
+        "mame": {
+          "romname": "motoraid",
+          "clones_inherit": true
+        }
+      }
+    },
+    "outrunners": {
+      "title": "OutRunners",
+      "manufacturer": "Sega",
+      "year": "1992",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "forum",
+          "description": "Racketboy forum lists OutRunners alongside OutRun at 270 degrees",
+          "url": "https://racketboy.com/forum/viewtopic.php?f=6&t=39813",
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Sega System Multi 32. Third OutRun installment. Original OutRun confirmed at 270 degrees. Similar cabinet design lineage. Steering wheel with vibration effects.",
+      "emulators": {
+        "mame": {
+          "romname": "orunners",
+          "clones_inherit": true
+        }
+      }
+    },
+    "powerdrift": {
+      "title": "Power Drift",
+      "manufacturer": "Sega",
+      "year": "1988",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "forum",
+          "description": "Community consensus on 270-degree Sega Super Scaler convention",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Sega Y Board (Super Scaler). Go-kart racing by Yu Suzuki. Deluxe cab has hydraulics. Uses gear/cog steering system with FFB.",
+      "emulators": {
+        "mame": {
+          "romname": "pdriftl",
+          "clones_inherit": true
+        }
+      }
+    },
+    "stadiumcross": {
+      "title": "Stadium Cross",
+      "manufacturer": "Sega",
+      "year": "1992",
+      "rotation_degrees": null,
+      "rotation_type": "potentiometer",
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Web research - no specific rotation data found",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Motocross on Sega System Multi 32. Twin cabinet using two System 32 boards. Motorcycle handlebar controls. No specific rotation found.",
+      "emulators": {
+        "mame": {
+          "romname": "scross",
+          "clones_inherit": true
+        }
+      }
+    },
+    "scudrace": {
+      "title": "Scud Race",
+      "manufacturer": "Sega",
+      "year": "1996",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "forum",
+          "description": "8Bitplus Scud Race restoration confirms potentiometer steering",
+          "url": "https://8bitplus.co.uk/projects/scud-race-restoration/",
+          "date_accessed": "2026-02-01"
+        },
+        {
+          "type": "emulator",
+          "description": "Supermodel emulator community confirms 270 degrees",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "First Model 3 racer (Step 1.5). Also known as Sega Super GT in North America. Shares SPG-2002 steering assembly with Daytona 2, Sega Rally 2, Dirt Devils. Motor-driven FFB (no spring centering).",
+      "emulators": {
+        "mame": {
+          "romname": "scud",
+          "clones_inherit": true
+        }
+      }
+    },
+    "segarally2": {
+      "title": "Sega Rally 2",
+      "manufacturer": "Sega",
+      "year": "1998",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "emulator",
+          "description": "Supermodel emulator and Thrustmaster setup guide confirm 270 degrees",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Model 3 Step 2.1. 500W servo motor FFB. Shares SPG-2002 assembly with Daytona 2, Scud Race, Dirt Devils. Handbrake for hairpin turns. 5k ohm pot steering.",
+      "emulators": {
+        "mame": {
+          "romname": "srally2",
+          "clones_inherit": true
+        }
+      }
+    },
+    "emergencycallambulance": {
+      "title": "Emergency Call Ambulance",
+      "manufacturer": "Sega",
+      "year": "1999",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "manual",
+          "description": "Sega Emergency Call Ambulance Manual - Model 3 steering assembly",
+          "url": "https://www.arcade-museum.com/manuals-videogames/E/Emergency-Call-Ambulance-Manual_00004.pdf",
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Model 3 hardware (NOT NAOMI). Shares SPG-2002 steering with other Model 3 racers. Dedicated ambulance-themed sit-down cabinet with flashing lights.",
+      "emulators": {
+        "mame": {
+          "romname": "eca",
+          "clones_inherit": true
+        }
+      }
+    },
+    "aquajet": {
+      "title": "Aqua Jet",
+      "manufacturer": "Namco",
+      "year": "1996",
+      "rotation_degrees": null,
+      "rotation_type": "unknown",
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "forum",
+          "description": "Arcade-Projects Aqua Jet controls discussion",
+          "url": "https://www.arcade-projects.com/threads/namco-aqua-jet-controls.22665/",
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Super System 22. Jet ski game where player leans to steer on waterscooter platform. Not a traditional wheel/handlebar game. Body-lean tilt-based steering.",
+      "emulators": {
+        "mame": {
+          "romname": "aquajet",
+          "clones_inherit": true
+        }
+      }
+    },
+    "battlegear": {
+      "title": "Battle Gear",
+      "manufacturer": "Taito",
+      "year": "1998",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "forum",
+          "description": "Arcade-Projects Battle Gear conversion thread",
+          "url": "https://www.arcade-projects.com/threads/battle-gear-3-conversion.12870/",
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Taito JC System. Successor to Side by Side series. FFB via Matsushita/Panasonic servo motor board similar to Sega Model 2/3 games.",
+      "emulators": {
+        "mame": {
+          "romname": "batlgear",
+          "clones_inherit": true
+        }
+      }
+    },
+    "changelanes": {
+      "title": "Change Lanes",
+      "manufacturer": "Taito",
+      "year": "1983",
+      "rotation_degrees": -1,
+      "rotation_type": "optical_encoder",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "manual",
+          "description": "Change Lanes service manual from Internet Archive confirms optical encoder",
+          "url": "https://archive.org/details/ArcadeGameManualChangelanes",
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Service manual confirms optical encoder (spinner) steering. Uses optocoupler with interrupter wheel (slotted disc). Infinite rotation, no mechanical stops.",
+      "emulators": {
+        "mame": {
+          "romname": "changela",
+          "clones_inherit": true
+        }
+      }
+    },
+    "chequeredflag": {
+      "title": "Chequered Flag",
+      "manufacturer": "Konami",
+      "year": "1988",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Inferred from Konami racing game convention and limited-range description",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Konami GX717 hardware. Limited-range steering wheel with analog gas and digital brake. 270 degrees based on Konami racing convention. Could be less (180-240).",
+      "emulators": {
+        "mame": {
+          "romname": "chqflag",
+          "clones_inherit": true
+        }
+      }
+    },
+    "continentalcircus": {
+      "title": "Continental Circus",
+      "manufacturer": "Taito",
+      "year": "1987",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "code",
+          "description": "MAME source taito_z.cpp reveals dual input modes via DIP switch",
+          "url": "https://github.com/mamedev/mame/blob/master/src/mame/taito/taito_z.cpp",
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Taito Z System. DIP switch selectable between paddle (potentiometer, locked steering) and dial (encoder, free-spinning) modes. Sit-down uses locked 270-degree pot mode.",
+      "emulators": {
+        "mame": {
+          "romname": "contcirc",
+          "clones_inherit": true
+        }
+      }
+    },
+    "counterrun": {
+      "title": "Counter Run",
+      "manufacturer": "Nihon System (Sega license)",
+      "year": "1988",
+      "rotation_degrees": -1,
+      "rotation_type": "optical_encoder",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "research",
+          "description": "MAME input type confirmed as dial (optical encoder)",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "NOT a racing game - maze/fruit-collecting game controlling a car through mazes. Uses dial (rotary encoder) with infinite rotation. Borderline for wheel database.",
+      "emulators": {
+        "mame": {
+          "romname": "countrun",
+          "clones_inherit": true
+        }
+      }
+    },
+    "doubleaxle": {
+      "title": "Double Axle",
+      "manufacturer": "Taito",
+      "year": "1991",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "forum",
+          "description": "Arcade-Projects discusses potentiometer steering for conversions",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Taito Z System monster truck racing. Potentiometer or encoder depending on cabinet variant. 270 degrees based on Taito racing convention.",
+      "emulators": {
+        "mame": {
+          "romname": "dblaxle",
+          "clones_inherit": true
+        }
+      }
+    },
+    "dirtdash": {
+      "title": "Dirt Dash",
+      "manufacturer": "Namco",
+      "year": "1995",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "parts",
+          "description": "Namco 1K 270-degree potentiometer (VG75-07050-00)",
+          "url": "https://twistedquarter.com/index.php?main_page=product_info&products_id=3782",
+          "date_accessed": "2026-02-01"
+        },
+        {
+          "type": "parts",
+          "description": "Dirt Dash steering motor listing",
+          "url": "https://yatonarcade.com/products/namco-arcade-dirt-dash-sitdown-steering-assembly-motor-dtm-5230j-working",
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Namco System 22. FFB via DTM 5230J / Unitec motor. Uses standard Namco 1K 270-degree potentiometer (part VG75-07050-00).",
+      "emulators": {
+        "mame": {
+          "romname": "dirtdash",
+          "clones_inherit": true
+        }
+      }
+    },
+    "dirtfox": {
+      "title": "Dirt Fox",
+      "manufacturer": "Namco",
+      "year": "1989",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Namco System 2 potentiometer standard (confirmed via Final Lap 3 manual)",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Namco System 2. Off-road racing, Japan-only. Same platform as Final Lap series. 270 degrees based on Namco standard potentiometer.",
+      "emulators": {
+        "mame": {
+          "romname": "dirtfoxj",
+          "clones_inherit": true
+        }
+      }
+    },
+    "driverseyes": {
+      "title": "Driver's Eyes",
+      "manufacturer": "Namco",
+      "year": "1990",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Namco System 21 platform convention",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Namco System 21. First Namco triple-monitor panoramic game. Extremely rare. 270 degrees based on System 21 convention shared with Winning Run.",
+      "emulators": {
+        "mame": {
+          "romname": "driveyes",
+          "clones_inherit": true
+        }
+      }
+    },
+    "f1gpstar2": {
+      "title": "F-1 Grand Prix Star II",
+      "manufacturer": "Jaleco",
+      "year": "1993",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Era-standard assumption - no specific documentation found",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Jaleco custom hardware. F1 racing. Very little documentation for Jaleco racing cabinets. 270 degrees assumed based on early 1990s convention.",
+      "emulators": {
+        "mame": {
+          "romname": "f1gpstr2",
+          "clones_inherit": true
+        }
+      }
+    },
+    "finallap3": {
+      "title": "Final Lap 3",
+      "manufacturer": "Namco",
+      "year": "1992",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "manual",
+          "description": "Final Lap 3 Operator's Manual confirms potentiometer steering",
+          "url": "https://www.gamesdatabase.org/Media/SYSTEM/Arcade//Manual/formated/Final_Lap_3_-_1992_-_Namco.pdf",
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Namco System 2. F1 racing, up to 8 players linked. Operator manual confirms potentiometer steering (center wipe on pin A21, 0-5V range).",
+      "emulators": {
+        "mame": {
+          "romname": "finalap3",
+          "clones_inherit": true
+        }
+      }
+    },
+    "fourtrax": {
+      "title": "Four Trax",
+      "manufacturer": "Namco",
+      "year": "1989",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Namco System 2 potentiometer standard",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Namco System 2. ATV off-road racing, Japan-only, up to 4 linked. Uses standard steering wheel (not handlebars despite being quad bikes).",
+      "emulators": {
+        "mame": {
+          "romname": "fourtrax",
+          "clones_inherit": true
+        }
+      }
+    },
+    "jetwave": {
+      "title": "Jet Wave",
+      "manufacturer": "Konami",
+      "year": "1996",
+      "rotation_degrees": null,
+      "rotation_type": "unknown",
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Web research - extremely rare, no specific data found",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Known as Wave Shark in North America. Jet ski replica cabinet with handlebar controls. Extremely rare (2 known units). Handlebar range likely 45-60 degrees.",
+      "emulators": {
+        "mame": {
+          "romname": "jetwave",
+          "clones_inherit": true
+        }
+      }
+    },
+    "overrev": {
+      "title": "Over Rev",
+      "manufacturer": "Jaleco",
+      "year": "1997",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "forum",
+          "description": "Arcade-Projects confirms Model 2 standard potentiometer compatibility",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Runs on Sega Model 2C hardware. Uses same cabinet/steering as other Model 2 racers (Daytona USA, Sega Rally). Standard 5K potentiometer.",
+      "emulators": {
+        "mame": {
+          "romname": "overrev",
+          "clones_inherit": true
+        }
+      }
+    },
+    "pocketracer": {
+      "title": "Pocket Racer",
+      "manufacturer": "Namco",
+      "year": "1996",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Namco convention for System 11 cabinet controls",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Namco System 11 (PlayStation-based). Choro-Q spin-off of Ridge Racer. Japan-exclusive. Very rare (2 known units). Standard Namco cabinet controls.",
+      "emulators": {
+        "mame": {
+          "romname": "pocketrc",
+          "clones_inherit": true
+        }
+      }
+    },
+    "supergt24h": {
+      "title": "Super GT 24h",
+      "manufacturer": "Jaleco",
+      "year": "1996",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "forum",
+          "description": "Arcade-Projects - Super GT 24h potentiometer compatibility",
+          "url": "https://www.arcade-projects.com/threads/super-gt-24h-fixed.27796/",
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Runs on Sega Model 2B hardware. Test menu shows steering centered at 80H. Compatible with standard Sega 5K potentiometers.",
+      "emulators": {
+        "mame": {
+          "romname": "sgt24h",
+          "clones_inherit": true
+        }
+      }
+    },
+    "sidebyside2": {
+      "title": "Side by Side 2",
+      "manufacturer": "Taito",
+      "year": "1997",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Taito racing convention and Battle Gear series continuity",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Taito JC System. Japanese touge racing, precursor to Battle Gear series (confirmed at 270). Consistent with Taito racing convention.",
+      "emulators": {
+        "mame": {
+          "romname": "sidebs2",
+          "clones_inherit": true
+        }
+      }
+    },
+    "technodrive": {
+      "title": "Techno Drive",
+      "manufacturer": "Namco",
+      "year": "1998",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Namco standard potentiometer convention",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Namco System 12 (PlayStation-based). Driving minigame collection. Standard Namco cabinet controls with 270-degree potentiometer.",
+      "emulators": {
+        "mame": {
+          "romname": "technodr",
+          "clones_inherit": true
+        }
+      }
+    },
+    "tokyowars": {
+      "title": "Tokyo Wars",
+      "manufacturer": "Namco",
+      "year": "1996",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Namco System 22 platform standard",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Super System 22. TANK combat, not racing. Steering wheel controls turret aiming with fire buttons. Same 270-degree Namco potentiometer as Ridge Racer/System 22 games.",
+      "emulators": {
+        "mame": {
+          "romname": "tokyowar",
+          "clones_inherit": true
+        }
+      }
+    },
+    "winningrun": {
+      "title": "Winning Run",
+      "manufacturer": "Namco",
+      "year": "1988",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Namco System 21 platform standard",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "First Namco System 21 game. F1 simulator with hydraulic motion cabinet. First polygon-based racing game with shaded 3D.",
+      "emulators": {
+        "mame": {
+          "romname": "winrun",
+          "clones_inherit": true
+        }
+      }
+    },
+    "winningrunsuzuka": {
+      "title": "Winning Run Suzuka Grand Prix",
+      "manufacturer": "Namco",
+      "year": "1989",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Namco System 21 platform standard",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Namco System 21. Sequel to Winning Run. Sit-down cabinet similar to Final Lap series. Same System 21 steering mechanism.",
+      "emulators": {
+        "mame": {
+          "romname": "winrungp",
+          "clones_inherit": true
+        }
+      }
+    },
+    "californiaspeed": {
+      "title": "California Speed",
+      "manufacturer": "Atari Games",
+      "year": "1998",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "parts",
+          "description": "SuzoHapp 270-degree wheel assembly for Atari racers",
+          "url": "https://na.suzohapp.com/products/driving_controls/50-2838-00",
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Atari Seattle hardware. Shares cabinet with SF Rush series. SuzoHapp 270-degree steering assembly confirmed via parts catalog.",
+      "emulators": {
+        "mame": {
+          "romname": "calspeed",
+          "clones_inherit": true
+        }
+      }
+    },
+    "dragrace": {
+      "title": "Drag Race",
+      "manufacturer": "Kee Games/Atari",
+      "year": "1977",
+      "rotation_degrees": -1,
+      "rotation_type": "optical_encoder",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Sprint II cabinet reuse with optical encoder assemblies",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Reuses Sprint II cabinet design with optical encoder steering. Minimal steering gameplay effect - mainly keeping car in lane.",
+      "emulators": {
+        "mame": {
+          "romname": "dragrace",
+          "clones_inherit": true
+        }
+      }
+    },
+    "driversedge": {
+      "title": "Driver's Edge",
+      "manufacturer": "Strata/Incredible Technologies",
+      "year": "1994",
+      "rotation_degrees": 270,
+      "rotation_type": "unknown",
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Era-standard assumption - very rare game",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Very rare F1 racing game (~8 known units). 270 degrees assumed based on era standard. Incredible Technologies primarily known for Golden Tee.",
+      "emulators": {
+        "mame": {
+          "romname": "drivedge",
+          "clones_inherit": true
+        }
+      }
+    },
+    "driftout": {
+      "title": "Drift Out",
+      "manufacturer": "Visco",
+      "year": "1991",
+      "rotation_degrees": -1,
+      "rotation_type": "optical_encoder",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "research",
+          "description": "MAME input type confirmed as dial (optical encoder)",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Top-down rally racing on Taito F2 hardware. MAME lists as dial (optical encoder/spinner). Screen rotates around player car. Can also be played with joystick.",
+      "emulators": {
+        "mame": {
+          "romname": "driftout",
+          "clones_inherit": true
+        }
+      }
+    },
+    "harddrivinsairborne": {
+      "title": "Hard Drivin's Airborne",
+      "manufacturer": "Atari Games",
+      "year": "1993",
+      "rotation_degrees": 1080,
+      "rotation_type": "potentiometer",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "manual",
+          "description": "Hard Drivin' series service manual - 10-turn potentiometer with 3 rotation stop",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Unreleased prototype in Hard Drivin' series. Uses same 10-turn potentiometer with ~3 rotations (~1080 degrees). Service manual references '3 rotation stop'.",
+      "emulators": {
+        "mame": {
+          "romname": "hdrivair",
+          "clones_inherit": true
+        }
+      }
+    },
+    "nightdriver": {
+      "title": "Night Driver",
+      "manufacturer": "Atari",
+      "year": "1976",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "reference",
+          "description": "Wikipedia paddle controller article - confirms potentiometer-based steering",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "One of earliest first-person racing games. Wikipedia confirms paddle wheel mechanically coupled to potentiometer. 4-position gear shift and accelerator pedal.",
+      "emulators": {
+        "mame": {
+          "romname": "nitedrvr",
+          "clones_inherit": true
+        }
+      }
+    },
+    "offroadchallenge": {
+      "title": "Off Road Challenge",
+      "manufacturer": "Midway",
+      "year": "1997",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "parts",
+          "description": "Same cabinet/wheel assembly as Cruis'n World and SF Rush",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Same cabinet as Cruis'n World and SF Rush. Motorized FFB steering. Midway V-Unit hardware. SuzoHapp 270-degree wheel.",
+      "emulators": {
+        "mame": {
+          "romname": "offroadc",
+          "clones_inherit": true
+        }
+      }
+    },
+    "roadburners": {
+      "title": "Road Burners",
+      "manufacturer": "Atari Games",
+      "year": "1999",
+      "rotation_degrees": 45,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Standard motorcycle arcade cabinet handlebar range",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Motorcycle racing with tilting motorcycle cabinet. Handlebar rotation ~45 degrees total, combined with lean input. Up to 8 players linkable.",
+      "emulators": {
+        "mame": {
+          "romname": "roadburn",
+          "clones_inherit": true
+        }
+      }
+    },
+    "roadsedge": {
+      "title": "Roads Edge",
+      "manufacturer": "SNK",
+      "year": "1997",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Manual auto-center description indicates pot-based 270-degree system",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "First racer on Hyper Neo Geo 64. Custom Driving Board with analog steering. Auto-centers during boot (potentiometer-based). Up to 4 linkable.",
+      "emulators": {
+        "mame": {
+          "romname": "roadedge",
+          "clones_inherit": true
+        }
+      }
+    },
+    "sfrush2049se": {
+      "title": "San Francisco Rush 2049 Special Edition",
+      "manufacturer": "Atari Games/Midway",
+      "year": "2003",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "parts",
+          "description": "SuzoHapp parts catalog for Rush 2049 cabinets",
+          "url": "https://na.suzohapp.com/products/driving_controls/50-2838-00",
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Software upgrade to Rush 2049 cabinets. SuzoHapp 270-degree FFB wheel. Sit-down with 4-speed shifter and 3 pedals.",
+      "emulators": {
+        "mame": {
+          "romname": "sf2049se",
+          "clones_inherit": true
+        }
+      }
+    },
+    "slipstream": {
+      "title": "Slip Stream",
+      "manufacturer": "Capcom",
+      "year": "1995",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Sega System 32 platform standard",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Extremely rare F1 game (~150 units) on Sega System 32. Only non-Sega game on this hardware. 270 based on System 32 platform standard.",
+      "emulators": {
+        "mame": {
+          "romname": "slipstrm",
+          "clones_inherit": true
+        }
+      }
+    },
+    "spyhunter2": {
+      "title": "Spy Hunter II",
+      "manufacturer": "Bally Midway",
+      "year": "1987",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Era-standard assumption for 1980s driving games",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Shared cabinet with Max RPM. Two-player split screen with two wheels, pedals, shifters, weapon buttons. 270 estimated from era standard.",
+      "emulators": {
+        "mame": {
+          "romname": "spyhunt2",
+          "clones_inherit": true
+        }
+      }
+    },
+    "superspeedracejr": {
+      "title": "Super Speed Race Junior",
+      "manufacturer": "Taito",
+      "year": "1985",
+      "rotation_degrees": -1,
+      "rotation_type": "optical_encoder",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "research",
+          "description": "MAME dial input type and Speed Race series optical encoder lineage",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Final game in Taito's Speed Race series (since 1974). MAME lists as dial (optical encoder). Top-down perspective.",
+      "emulators": {
+        "mame": {
+          "romname": "ssrj",
+          "clones_inherit": true
+        }
+      }
+    },
+    "streetdrivin": {
+      "title": "Street Drivin'",
+      "manufacturer": "Atari Games",
+      "year": "1993",
+      "rotation_degrees": 1080,
+      "rotation_type": "potentiometer",
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "manual",
+          "description": "Hard Drivin' series hardware - 10-turn potentiometer",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Unreleased prototype, Race Drivin' sequel. Same Hard Drivin' cabinet with 10-turn potentiometer and ~3 rotation stop.",
+      "emulators": {
+        "mame": {
+          "romname": "strtdriv",
+          "clones_inherit": true
+        }
+      }
+    },
+    "topsecret": {
+      "title": "Top Secret",
+      "manufacturer": "Exidy",
+      "year": "1986",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Standard pot-based range assumption",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Spy driving/shooting on Exidy 440. Conversion kit for Crossbow cabinets with add-on steering wheel. Custom interface board for steering.",
+      "emulators": {
+        "mame": {
+          "romname": "topsecex",
+          "clones_inherit": true
+        }
+      }
+    },
+    "worldrally": {
+      "title": "World Rally",
+      "manufacturer": "Gaelco",
+      "year": "1993",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "verified",
+      "sources": [
+        {
+          "type": "forum",
+          "description": "Arcade Museum forum - PCB jumper for 270/360 degree wheel selection documented",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "PCB jumper selects between 270-degree potentiometer and 360-degree optical wheel. Standard config is 270-degree pot. 23,000 units sold in Europe.",
+      "emulators": {
+        "mame": {
+          "romname": "wrally",
+          "clones_inherit": true
+        }
+      }
+    },
+    "xtremeally": {
+      "title": "Xtreme Rally",
+      "manufacturer": "SNK",
+      "year": "1998",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Manual auto-center/calibration description plus Roads Edge platform continuity",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Hyper Neo Geo 64. Sequel to Roads Edge. FFB auto-centers during boot. Manual warns not to touch steering during Network Check (self-calibration). Up to 4 linkable.",
+      "emulators": {
+        "mame": {
+          "romname": "xrally",
+          "clones_inherit": true
+        }
+      }
+    },
+    "acedriver": {
+      "title": "Ace Driver",
+      "manufacturer": "Namco",
+      "year": "1994",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "forum",
+          "description": "Namco System 22 calibration thread on BYOAC",
+          "url": "http://forum.arcadecontrols.com/index.php?topic=46182.0",
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Namco System 22. Continuous rotation potentiometer, no spring return. 10-inch red leather racing wheel. FFB motor. Same platform as Ridge Racer.",
+      "emulators": {
+        "mame": {
+          "romname": "acedrvrw",
+          "clones_inherit": true
+        }
+      }
+    },
+    "raveracer": {
+      "title": "Rave Racer",
+      "manufacturer": "Namco",
+      "year": "1995",
+      "rotation_degrees": 270,
+      "rotation_type": "mechanical_stop",
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Namco System 22 platform standard - same as Ridge Racer",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Third Ridge Racer entry, Namco System 22. Adds FFB over Ridge Racer 2. Same platform and steering as Ridge Racer and Ace Driver.",
+      "emulators": {
+        "mame": {
+          "romname": "raveracw",
+          "clones_inherit": true
+        }
+      }
+    },
+    "steeringchamp": {
+      "title": "Steering Champ",
+      "manufacturer": "Konami",
+      "year": "1997",
+      "rotation_degrees": 270,
+      "rotation_type": "potentiometer",
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Era-standard assumption for steering wheel arcade games",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Part of Bishi Bashi series (Handle Champ in Japan). Collection of 17 car-themed minigames. Konami 573 hardware. Not a traditional racing game.",
+      "emulators": {
+        "mame": {
+          "romname": "strgchmp",
+          "clones_inherit": true
+        }
+      }
+    },
+    "longbeach": {
+      "title": "Long Beach",
+      "manufacturer": "Olympia",
+      "year": "1979",
+      "rotation_degrees": null,
+      "rotation_type": "unknown",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "type": "research",
+          "description": "No documentation found - extremely obscure",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Extremely rare Italian-made top-down driving game. No known surviving units. Zero documentation found.",
+      "emulators": {
+        "mame": {
+          "romname": "lbeach",
+          "clones_inherit": true
+        }
+      }
+    },
+    "wheelsandfire": {
+      "title": "Wheels & Fire",
+      "manufacturer": "TCH",
+      "year": "199?",
+      "rotation_degrees": null,
+      "rotation_type": "unknown",
+      "confidence": "unknown",
+      "sources": [
+        {
+          "type": "research",
+          "description": "Conflicting control information - may not use steering wheel",
+          "url": null,
+          "date_accessed": "2026-02-01"
+        }
+      ],
+      "notes": "Obscure Spanish-made racing game. arcade-history.com lists joystick control despite MAME paddle classification. May use joystick not wheel.",
+      "emulators": {
+        "mame": {
+          "romname": "wheelfir",
           "clones_inherit": true
         }
       }

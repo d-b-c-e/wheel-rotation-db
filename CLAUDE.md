@@ -266,6 +266,8 @@ Parses three MAME data sources to inventory all racing/driving games with wheel 
 
 Results: 1,488 total games, 484 with wheel controls, 1,040 parent ROMs, 63 from controls.xml with verified rotation values.
 
+**MAME Research Progress**: 65 parent driving/racing games with wheel controls researched in batch 1. Sources included service manuals, arcade parts catalogs (SuzoHapp, TwistedQuarter), emulator communities (Supermodel), and forum discussions (BYOAC, Arcade-Projects, Arcade Museum). ~116 remaining parent games with paddle/dial controls are mostly non-driving (Pong, Arkanoid, etc.) and need triage.
+
 #### Get-TeknoparrotGames.ps1
 Scans local TeknoParrot installation for wheel-equipped games. Reads GameProfiles XML for `<AnalogType>Wheel</AnalogType>`, enriches from Metadata JSON. Outputs to `sources/cache/teknoparrot-games.json`.
 
@@ -405,7 +407,7 @@ To bootstrap the database, here are some verified/commonly cited values:
 |------|----------|------|------------|-------|
 | Out Run | 270° | mechanical_stop | high | ±135° from center |
 | Pole Position | -1 | optical_encoder | high | Infinite rotation spinner |
-| Hard Drivin' | variable | potentiometer | medium | Calibration-dependent |
+| Hard Drivin' | 1080° | potentiometer | high | 10-turn pot with 3-rotation mechanical stop |
 | Daytona USA | 270° | mechanical_stop | medium | Common Sega spec |
 | Ridge Racer | 270° | mechanical_stop | medium | Namco standard |
 | Cruis'n USA | 270° | mechanical_stop | medium | Midway standard |
@@ -578,9 +580,21 @@ This project should use a permissive license (MIT or CC0) to encourage:
 - **System 246/256**: 270° typical
 
 ### Atari/Midway
-- **Hard Drivin' series**: Potentiometer-based, variable
-- **Cruis'n series**: 270° typical
-- **San Francisco Rush**: 270° typical
+- **Hard Drivin' series**: 1080° (10-turn potentiometer with 3-rotation mechanical stop) -- unique among arcade racers
+- **Cruis'n series**: 270° typical (SuzoHapp Active 270 assembly)
+- **San Francisco Rush**: 270° typical (SuzoHapp 270)
+- **18 Wheeler (Sega on NAOMI)**: 360° -- notable exception to the 270° norm
+
+### Sega Model 3 Specifics
+- All Model 3 racers share the **SPG-2002 steering assembly** with 5K ohm potentiometer
+- 500W servo motor force feedback (no spring centering)
+- Games: Daytona USA 2, Scud Race, Sega Rally 2, Dirt Devils, Le Mans 24, Emergency Call Ambulance
+- Supermodel emulator community confirms 270° gives 1:1 ratio with arcade
+
+### Namco Potentiometer Standard
+- Standard part: 1K ohm 270-degree potentiometer (VG75-07050-00, replaced by DE475-15417-00)
+- Used across System 2, System 21, System 22, Super System 22, System 11, System 12
+- Confirmed by Final Lap 3 operator manual (center wipe on pin A21, 0-5V range)
 
 ### Taito
 - **Chase H.Q. series**: 270° typical
