@@ -40,7 +40,7 @@ All scripts are PowerShell 7+ and located in `scripts/`.
 | `Setup-Dependencies.ps1` | Done | Downloads catver.ini, controls.xml, nplayers.ini; generates MAME listxml from local MAME install |
 | `Get-TeknoparrotGames.ps1` | Done | Scans local TeknoParrot installation for wheel-equipped games (98 found, 25 with rotation metadata) |
 | `Get-MameGames.ps1` | Done | Parses catver.ini + MAME listxml + controls.xml to inventory all MAME racing/driving games (1,488 found) |
-| `Export-Formats.ps1` | Not started | Generate CSV and XML exports from JSON master |
+| `Export-Formats.ps1` | Done | Generates CSV and XML exports from JSON master into `dist/` |
 | `Validate-Database.ps1` | Not started | Validate database against JSON schema |
 
 ## Dependencies
@@ -67,18 +67,18 @@ All downloaded files go to `sources/downloads/` (gitignored).
 - [x] MAME research phase (batch 1) -- researched 65 driving/racing parent games across Sega, Namco, Taito, Atari, Midway, Konami, SNK, and others. Added 63 new entries with rotation values from service manuals, parts catalogs, emulator communities, and forum sources
 - [x] MAME research phase (batch 2) -- triaged remaining 118 parent MAME games with paddle/dial controls. Only 1 was a real steering wheel game (Ace Driver: Victory Lap). The other 117 are paddle/breakout games (Arkanoid, Pong), spinners (Tempest, 720°), periscopes (Sea Wolf), music games (beatmania turntable), home computers (Atari 400/800), and other non-steering controls
 - [x] Catver driving game import -- added 443 catver.ini driving/racing games as unknown entries (rotation null) so the community can identify any that actually use steering wheels. Excluded horse racing/gambling/plug-and-play categories
+- [x] Export-Formats.ps1 -- generates MAME CSV and XML lookup files from the JSON database
+- [x] GitHub Actions release workflow -- auto-creates versioned GitHub releases with JSON, CSV, and XML assets when the database version changes
 
 ### Next Up
 - [ ] **Cross-mapping** -- Link TeknoParrot-only entries to MAME ROM names where the same game exists in both
 - [ ] **Validate-Database.ps1** -- Schema validation, duplicate detection, range checks
-- [ ] **Export-Formats.ps1** -- CSV and XML exports for frontend/emulator integration
 - [ ] **Other emulator mappings** -- Add Supermodel, Model 2 Emulator, Flycast, Dolphin identifiers to existing entries
 
 ### Future
 
 - [ ] Community contributions via pull requests
 - [ ] Integration guides for emulator frontends (LaunchBox, RetroArch, etc.)
-- [ ] MAME ctrlr file generation for automatic wheel configuration
 - [ ] Paddle/dial games research (Arkanoid, etc. -- different use case from steering wheels)
 
 ## Repository Structure
@@ -93,10 +93,31 @@ wheel-rotation-db/
     Setup-Dependencies.ps1       # Download/copy data dependencies
     Get-MameGames.ps1            # MAME wheel game inventory
     Get-TeknoparrotGames.ps1     # TeknoParrot wheel game inventory
+    Export-Formats.ps1           # Generate CSV/XML exports into dist/
+  .github/
+    workflows/
+      release.yml                # Auto-release on database version change
   sources/
     downloads/                   # catver.ini, controls.xml, etc. (gitignored)
     cache/                       # Generated inventories (gitignored)
-  docs/                          # Future documentation
+  dist/                          # Build artifacts (gitignored, attached to releases)
+```
+
+## Consuming the Data
+
+Each [GitHub Release](../../releases) includes three artifacts:
+
+| File | Format | Description |
+|------|--------|-------------|
+| `wheel-rotation.json` | JSON | Full database with all metadata, sources, and multi-emulator mappings |
+| `mame-wheel-rotation.csv` | CSV | Flat MAME ROM-to-rotation lookup (games with known values only) |
+| `mame-wheel-rotation.xml` | XML | Same MAME lookup data in XML format |
+
+**Quick access** (latest release, once the repo is public):
+```
+https://github.com/{owner}/wheel-rotation-db/releases/latest/download/wheel-rotation.json
+https://github.com/{owner}/wheel-rotation-db/releases/latest/download/mame-wheel-rotation.csv
+https://github.com/{owner}/wheel-rotation-db/releases/latest/download/mame-wheel-rotation.xml
 ```
 
 ## Contributing

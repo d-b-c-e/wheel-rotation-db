@@ -1,0 +1,51 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+    paths: ['data/wheel-rotation.json']
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Extract version
+        id: version
+        shell: pwsh
+        run: |
+          $db = Get-Content data/wheel-rotation.json | ConvertFrom-Json
+          "version=$($db.version)" >> $env:GITHUB_OUTPUT
+
+      - name: Check existing release
+        id: check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view "v${{ steps.version.outputs.version }}" > /dev/null 2>&1; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Export formats
+        if: steps.check.outputs.exists == 'false'
+        shell: pwsh
+        run: ./scripts/Export-Formats.ps1
+
+      - name: Create release
+        if: steps.check.outputs.exists == 'false'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ steps.version.outputs.version }}
+          name: Wheel Rotation Database v${{ steps.version.outputs.version }}
+          generate_release_notes: true
+          files: |
+            dist/wheel-rotation.json
+            dist/mame-wheel-rotation.csv
+            dist/mame-wheel-rotation.xml
