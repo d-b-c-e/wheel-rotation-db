@@ -80,6 +80,7 @@ All downloaded files go to `sources/downloads/` (gitignored).
 - [ ] Community contributions via pull requests
 - [ ] Integration guides for emulator frontends (LaunchBox, RetroArch, etc.)
 - [ ] Paddle/dial games research (Arkanoid, etc. -- different use case from steering wheels)
+- [ ] **PC racing games** -- Community-recommended rotation values for Steam, Epic, GOG titles and arbitrary Windows executables. Unlike arcade cabinets, PC games rarely have an official "correct" rotation, so these would be community consensus recommendations for the best experience. Would need a new emulator/platform key (e.g., `steam`, `epic`, `gog`, or a generic `pc` with executable name matching).
 
 ## Repository Structure
 

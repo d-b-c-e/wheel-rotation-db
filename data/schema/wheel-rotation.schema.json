@@ -143,13 +143,22 @@
     },
     "emulatorTeknoparrot": {
       "type": "object",
-      "required": ["profile"],
       "properties": {
         "profile": {
           "type": "string",
-          "description": "TeknoParrot GameProfile filename (without .xml extension)"
+          "description": "Primary TeknoParrot GameProfile filename (without .xml extension). Deprecated in favor of profiles array."
+        },
+        "profiles": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1,
+          "description": "TeknoParrot GameProfile filenames (without .xml extension). Covers version/region variants of the same game."
         }
       },
+      "oneOf": [
+        { "required": ["profiles"] },
+        { "required": ["profile"] }
+      ],
       "additionalProperties": false
     },
     "emulatorDolphin": {

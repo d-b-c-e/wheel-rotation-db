@@ -1,6 +1,6 @@
 {
-  "version": "1.4.0",
-  "generated": "2026-02-01T20:32:50Z",
+  "version": "1.5.0",
+  "generated": "2026-02-02T00:00:00Z",
   "games": {
     "outrun": {
       "title": "Out Run",
@@ -349,7 +349,7 @@
       "notes": "Sega Lindbergh Yellow hardware. Initial D stages 4-8 use 540 degree rotation.",
       "emulators": {
         "teknoparrot": {
-          "profile": "ID4Exp"
+          "profiles": ["ID4Exp", "ID4Jap"]
         }
       }
     },
@@ -459,7 +459,7 @@
       "notes": "Sega Nu hardware. Series switched from 540 to 270 starting with this entry.",
       "emulators": {
         "teknoparrot": {
-          "profile": "IDZ"
+          "profiles": ["IDZ", "IDZTP", "IDZv2", "IDZv2TP"]
         }
       }
     },
@@ -481,7 +481,7 @@
       "notes": "Sega ALLS hardware.",
       "emulators": {
         "teknoparrot": {
-          "profile": "IDTA"
+          "profiles": ["IDTA", "IDTAS5"]
         }
       }
     },
@@ -525,7 +525,7 @@
       "notes": "Namco ES3B hardware.",
       "emulators": {
         "teknoparrot": {
-          "profile": "WMMT5"
+          "profiles": ["WMMT5", "WMMT5DX", "WMMT5DXPlus"]
         }
       }
     },
@@ -547,7 +547,7 @@
       "notes": "Namco ES3B hardware.",
       "emulators": {
         "teknoparrot": {
-          "profile": "WMMT6"
+          "profiles": ["WMMT6", "WMMT6R", "WMMT6RR"]
         }
       }
     },
@@ -635,7 +635,7 @@
       "notes": "Sega Lindbergh hardware. Modified SEGA Race TV cabinet. TeknoParrot also available as R-TunedElf2.",
       "emulators": {
         "teknoparrot": {
-          "profile": "R-Tuned"
+          "profiles": ["R-Tuned", "R-TunedElf2"]
         }
       }
     },
@@ -657,7 +657,7 @@
       "notes": "Sega Lindbergh hardware. R-Tuned uses a modified version of this cabinet. TeknoParrot also available as segartvelf2.",
       "emulators": {
         "teknoparrot": {
-          "profile": "segartv"
+          "profiles": ["segartv", "segartvelf2"]
         }
       }
     },
@@ -723,7 +723,7 @@
       "notes": "Sega PC hardware. Spiritual successor to Daytona USA. NSE (Daytona3NSE) is the Network Satellite Edition of the same game.",
       "emulators": {
         "teknoparrot": {
-          "profile": "Daytona3"
+          "profiles": ["Daytona3", "Daytona3NSE"]
         }
       }
     },
@@ -1031,7 +1031,7 @@
       "notes": "Namco ES3A hardware. TeknoParrot variants: MKDX, MKDX118, MKDXUSA, MKDXUSA106.",
       "emulators": {
         "teknoparrot": {
-          "profile": "MKDX"
+          "profiles": ["MKDX", "MKDXUSA", "MKDXUSA106", "MKDX118"]
         }
       }
     },
