@@ -113,12 +113,14 @@ Each [GitHub Release](../../releases) includes three artifacts:
 | `mame-wheel-rotation.csv` | CSV | Flat MAME ROM-to-rotation lookup (games with known values only) |
 | `mame-wheel-rotation.xml` | XML | Same MAME lookup data in XML format |
 
-**Quick access** (latest release, once the repo is public):
+**Quick access** (latest release):
 ```
-https://github.com/{owner}/wheel-rotation-db/releases/latest/download/wheel-rotation.json
-https://github.com/{owner}/wheel-rotation-db/releases/latest/download/mame-wheel-rotation.csv
-https://github.com/{owner}/wheel-rotation-db/releases/latest/download/mame-wheel-rotation.xml
+https://github.com/d-b-c-e/wheel-rotation-db/releases/latest/download/wheel-rotation.json
+https://github.com/d-b-c-e/wheel-rotation-db/releases/latest/download/mame-wheel-rotation.csv
+https://github.com/d-b-c-e/wheel-rotation-db/releases/latest/download/mame-wheel-rotation.xml
 ```
+
+For detailed parsing instructions, field reference, code examples, and emulator-specific guidance, see **[docs/INTEGRATION.md](docs/INTEGRATION.md)**.
 
 ## Contributing
 
